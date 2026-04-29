@@ -44,8 +44,6 @@ cat < file1
 ## OUTPUT
 <img width="661" height="175" alt="image" src="https://github.com/user-attachments/assets/bbbaeff7-1c82-4dd1-9cca-8998eba63e31" />
 
-
-
 cat < file2
 ## OUTPUT
 <img width="653" height="179" alt="image" src="https://github.com/user-attachments/assets/468a3895-f88b-4b7c-bcda-f4a001e82a98" />
