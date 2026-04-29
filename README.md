@@ -212,25 +212,7 @@ egrep '((W|w)orld$)' newfile
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
-
-
-egrep 'Linux.*world' newfile 
-## OUTPUT
-
-
-egrep 'Linux.*World' newfile 
-## OUTPUT
-
-
-egrep l{2} newfile
-## OUTPUT
-
-
-
-egrep 's{1,2}' newfile
-## OUTPUT 
-
+<img width="637" height="99" alt="image" src="https://github.com/user-attachments/assets/f5e82d68-f71d-4d12-b7cc-68dda4e336ce" />
 
 cat > file23
 ```
@@ -250,94 +232,65 @@ sed -n -e '3p' file23
 ## OUTPUT
 <img width="521" height="75" alt="image" src="https://github.com/user-attachments/assets/bd03a688-84b5-435c-8ef7-46e62ca34a63" />
 
-
-
 sed -n -e '$p' file23
 ## OUTPUT
 <img width="642" height="72" alt="image" src="https://github.com/user-attachments/assets/83d6adc4-1d04-426a-80a7-5bc280679c2c" />
-
-
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 <img width="572" height="237" alt="image" src="https://github.com/user-attachments/assets/dc9eb8b7-249a-4e95-a1e4-6a0fa57d4dcf" />
 
-
-
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 <img width="553" height="250" alt="image" src="https://github.com/user-attachments/assets/af63fdfa-8af8-48c9-8990-9f88e3533706" />
-
-
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 <img width="646" height="247" alt="image" src="https://github.com/user-attachments/assets/9cf424ff-0fe3-43d7-9d13-0eb6c1022056" />
 
-
-
 sed -n -e '1,5p' file23
 ## OUTPUT
 <img width="594" height="169" alt="image" src="https://github.com/user-attachments/assets/26eaeba4-015a-430f-b5ee-78f3e96beff1" />
-
-
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 <img width="466" height="123" alt="image" src="https://github.com/user-attachments/assets/2c0b15b7-cb72-4591-be23-9507dc7c23f1" />
 
-
-
-
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 <img width="524" height="97" alt="image" src="https://github.com/user-attachments/assets/56848918-0072-4726-b50b-216a1d8f71e9" />
-
-
 
 seq 10 
 ## OUTPUT
 <img width="529" height="298" alt="image" src="https://github.com/user-attachments/assets/95da86fb-bc84-48f8-92de-e772d412405d" />
 
-
-
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 <img width="424" height="122" alt="image" src="https://github.com/user-attachments/assets/bebbcad5-23cb-4f6f-9e7d-044f918dd2e9" />
-
-
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
 <img width="548" height="116" alt="image" src="https://github.com/user-attachments/assets/5ae093af-f9c9-4d80-905f-332a2353cbb9" />
 
-
 seq 3 | sed '2a hello'
 ## OUTPUT
 <img width="468" height="150" alt="image" src="https://github.com/user-attachments/assets/de2c597d-b65a-4a3b-8bfb-98c7cbedf73e" />
-
-
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 <img width="409" height="122" alt="image" src="https://github.com/user-attachments/assets/2e6eac86-7b0b-408f-9d22-472586697e91" />
 
-
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 <img width="550" height="122" alt="image" src="https://github.com/user-attachments/assets/35813e2c-c886-481b-acdf-850de1c50bce" />
-
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 <img width="549" height="127" alt="image" src="https://github.com/user-attachments/assets/265e4b0a-b095-4935-8593-3fa49824d55c" />
 
-
-
 sed -n '2,4{s/$/*/;p}' file23
 <img width="492" height="122" alt="image" src="https://github.com/user-attachments/assets/a6cdb4cc-008b-4e03-ae65-8e96a1659490" />
-
 
 #Sorting File content
 cat > file21
@@ -391,8 +344,6 @@ cat urllist.txt | tr -d ' '
  ## OUTPUT
 <img width="568" height="125" alt="image" src="https://github.com/user-attachments/assets/79710612-4677-4548-974a-3adc0859b849" />
 
-
- 
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
@@ -430,11 +381,8 @@ gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
-gunzip backup.tar.gz
-## OUTPUT
+ <img width="604" height="70" alt="image" src="https://github.com/user-attachments/assets/4cd0f997-73b8-4c07-95f2-81bb5cd7481e" />
 
- 
 # Shell Script
 ```
 echo '#!/bin/sh' > my-script.sh
@@ -442,7 +390,6 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 ```
 chmod 755 my-script.sh
 ./my-script.sh
-## OUTPUT
 
  
 cat << stop > herecheck.txt
@@ -549,18 +496,10 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-
-
-
-
-
+<img width="569" height="269" alt="image" src="https://github.com/user-attachments/assets/370863e3-ff1c-4bbc-b273-1e0cccd0530d" />
 chmod 755 strcomp.sh
  
-./strcomp.sh 
-## OUTPUT
-
-
-
+./strcomp.sh
 # check file ownership
 cat < psswdperm.sh 
 ```bash
@@ -586,7 +525,8 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![Uploading image.png…]()
+<img width="703" height="248" alt="image" src="https://github.com/user-attachments/assets/e98c36e9-b500-4425-a1ab-8c0aad0fef43" />
+
 
 
 # check if with file location
